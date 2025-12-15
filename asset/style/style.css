@@ -84,9 +84,72 @@ main {
 /* menu */
 .menu {
     width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-block:40px ;
 }
 
-.menu.container figure img {
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
+}
+
+.menu-container figure {
+    text-align: center;
+}
+
+.menu-container figure img {
     height: 200px;
     width: 300px;
+}
+
+/* Locations */
+
+.locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url(../image/img-locations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.locations-container div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: black;
+    width: 300px;
+    padding: 30px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-inline: 20px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    text-align: left;
 }
